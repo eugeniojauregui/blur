@@ -144,12 +144,10 @@ nav ul li:hover .submenu {
     overflow: hidden;
     transition: all ease .2s;
 }
-
 .discos li img {
     width: 100%;
     display: block;
 }
-
 .discos li .album {
     background: rgba(0, 0, 0, 0.75);
     width: 100%;
@@ -181,7 +179,6 @@ nav ul li:hover .submenu {
         width: 500px;
     }
 }
-
 .transform img {
     /*transform: translate(100px, 75px);*/
     /*transform: rotate(-45deg);*/
