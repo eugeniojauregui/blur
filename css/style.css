@@ -1,0 +1,201 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /*background: linear-gradient(45deg, green,  lightcoral)*/
+    background: radial-gradient(closest-side at 10% 25%, red, blue);
+    /*
+farthest-corner (default)
+closest-side
+closest-corner
+farthest-side
+    */
+}
+
+/* Anotacion */
+p {
+    font-size: 18px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-align: justify;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    min-height: 200px;
+    border: 5px solid brown;
+    padding: 10px;
+    background: lightcoral;
+    margin: auto;
+    margin-bottom: 25px;
+    /*text-transform: uppercase;*/
+}
+
+.italica {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: 700;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    color: red;
+    text-align: center;
+    background: red;
+}
+
+nav ul li {
+    /*border-width: 4px;
+    border-style: dotted;
+    border-color: green;
+    border-top-width:20px;*/
+    /*border: 2px solid blue;*/
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: white;
+    position: relative;
+}
+
+.float {
+    /*float: right;*/
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    z-index: 1;
+    /*margin-left:50px;*/
+}
+
+.float2 {
+    position: absolute;
+    bottom: 140px;
+    left: 150px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+#Integrantes {
+    background-color: lightgoldenrodyellow;
+    background-image: url("../img/98521288-abstract-pastel-watercolor-background-.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    position: relative;
+}
+
+.container {
+    min-height: 200px;
+}
+
+.submenu {
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.submenu li {
+    display: block;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.discos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.discos li {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 25px;
+    position: relative;
+    border-radius: 250px;
+    overflow: hidden;
+    transition: all ease .2s;
+}
+
+.discos li img {
+    width: 100%;
+    display: block;
+}
+
+.discos li .album {
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    line-height: 250px;
+    font-size: 20px;
+    display: none;
+}
+.discos li:hover {
+    transform: scale(1.5) translate(0px, -125px);
+}
+.discos li:hover .album {
+    display: block;
+}
+@keyframes logo_animado {
+    0% {
+        width: 500px;
+    }
+    50% {
+        width: 10px;
+        height: 200px;
+        color:red;
+        transform: skewY(30deg)
+    }
+    100% {
+        width: 500px;
+    }
+}
+
+.transform img {
+    /*transform: translate(100px, 75px);*/
+    /*transform: rotate(-45deg);*/
+    /*transform: scale(.5, 3);*/
+    /*transform: skewY(25deg) translate(100px)*/
+    animation-name: logo_animado;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#Integrantes h2 {
+    animation-name: logo_animado;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: block;
+    width: 200px;
+    text-align: right;
+}
